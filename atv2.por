@@ -2,7 +2,7 @@ programa {
   funcao inicio() {
 
     cadeia nome = "Caue"
-    // cadeia nome = "Rafael" >>> cria uma variavel do tipo texto  CADEIA = (comando) /// NOME = (variavel)
+    // cadeia nome = "Caue" >>> cria uma variavel do tipo texto  CADEIA = (comando) /// NOME = (variavel)
 
     escreva("Meu nome é: " + nome + "\n")
 
