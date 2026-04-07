@@ -3,22 +3,24 @@ programa {
 // indentificar e criar variaveis
 
 real racaoQtd
-real valorRacao, valorGrama
+real valorKg, valorGrama, valorTotal
 //leitura 
 
-escreva("Qual o valor da ração? ")
-leia(valorRacao)
+escreva("Digite o valor da ração: ")
+leia(valorKg)
 
-escreva("Quantos gramas de ração vai precisar?")
+escreva("Digite quantos quilos vai precisar: ")
 leia(racaoQtd)
 
 // processar
 
-valorGrama = valorRacao * (racaoQtd/1000)
+valorGrama = valorKg / 1000
+
+valorTotal = valorGrama * racaoQtd
 
 // apresentar
 
-escreva("Você deve pagar: " + valorGrama + " reais")
+escreva("Você deve pagar: " + valorTotal + " reais")
 
     
   }
