@@ -130,14 +130,205 @@
 
 // ========================================================
 
+// TELLES TRANSPORTES
 
-let frete, peso, distancia, volume
+// let frete, peso, distancia, volume
 
-peso = Number(prompt("Digite o peso total: "))
-volume = Number(prompt("Digite o volume total: "))
-distancia = Number(prompt("Digite a distância total: "))
+// peso = Number(prompt("Digite o peso total: "))
+// volume = Number(prompt("Digite o volume total: "))
+// distancia = Number(prompt("Digite a distância total: "))
 
-frete = 15+(2*peso)+(0.05*distancia)+(10*volume)
+// frete = 15+(2*peso)+(0.05*distancia)+(10*volume)
 
-alert("O frete é de: R$" + frete.toFixed(2) + " reais!")
-console.log("O frete é de: R$" + frete.toFixed(2) + " reais!")
+// alert("O frete é de: R$" + frete.toFixed(2) + " reais!")
+// console.log("O frete é de: R$" + frete.toFixed(2) + " reais!")
+
+// =========================================================
+
+// MONICA TECH RECRUITER
+
+// let chance, vzsNoCelular
+
+// vzsNoCelular = Number(prompt("Quantas vezes o candidato pegou o celular:"))
+
+// chance = (0.1 / (1 + 500 * vzsNoCelular)) * 100
+
+// alert("A chance do candidato passar no teste é de: " + chance.toFixed(4) + "%")
+// console.log("A chance do candidato passar no teste é de: " + chance.toFixed(4) + "%")
+
+// ===========================================================
+
+// DONA BET
+
+// let faturamento, premiacao, presente, salario, lucro
+
+// faturamento = Number(prompt("Digite o faturamento de hoje:"))
+// premiacao = Number(prompt("Digite o valor gasto em premiações:"))
+// presente = Number(prompt("Digite o valor gasto em presentes: "))
+// salario = Number(prompt("Digite o valor gasto em salários com funci"))
+
+// lucro = faturamento - premiacao - presente - salario
+
+// alert("O lucro da DonaBet foi de: R$" + lucro )
+// console.log("O lucro da DonaBet foi de: R$" + lucro)
+
+//============================================================
+
+// CAPITAO GANSO
+
+// let gastoSuprimento, vendaIngresso, vendaItens, lucro, lucroPer100
+
+// gastoSuprimento =  Number(prompt("Digite o valor gasto em suprimentos: "))
+
+// vendaIngresso = Number(prompt("Digite o fatuuramento em ingressos: "))
+// vendaItens =  Number(prompt("Digite o faturamento em itens vendidos: "))
+
+// lucro = Number(vendaIngresso + vendaItens - gastoSuprimento)
+// lucroPer100 = lucro/gastoSuprimento * 100
+
+// alert("Seu lucro foi de: R$" + lucro +
+//     "\n Seu percentual de lucro foi: " + lucroPer100 + "%")
+
+// console.log("Seu lucro foi de: R$" + lucro +
+//     "\n Seu percentual de lucro foi: " + lucroPer100 + "%")
+
+// ===========================================================
+
+// SARUMANO O MAGO
+
+// let qtdShow, bombaPorShow, qtdBombas, valorPorBomba, valorGastoTotal
+
+// qtdShow = Number(prompt("Digite a quantidade de shows na temporada: "))
+// bombaPorShow = Number(prompt("Digite a quantidade de bombas usadas por show: "))
+// valorPorBomba = Number(prompt("Digite o valor gasto por bomba: "))
+
+// qtdBombas = Number(qtdShow * bombaPorShow)
+
+// valorGastoTotal = qtdBombas * valorPorBomba
+
+
+// alert("Sarumano vai usar essa quantidade de bombas: " + qtdBombas)
+// console.log("Sarumano vai usar essa quantidade de bombas: " + qtdBombas)
+
+// alert("Vai ser gasto um total de: R$" + valorGastoTotal.toFixed(2))
+// console.log("Vai ser gasto um total de: R$" + valorGastoTotal.toFixed(2))
+
+
+// =============================================================
+
+// MANOJUCA E SUA POUPANÇA
+
+// let moradia, agua, luz, net, gasolina, streaming, telefone, outros, despezas, salario, poupanca
+
+// salario = Number(prompt("Digite seu salário: "))
+
+// moradia = Number(prompt("Digite o valor do aluguel: "))
+// agua = Number(prompt("Digite o valor da conta de água: "))
+// luz = Number(prompt("Digite o valor da conta de luz: "))
+// net = Number(prompt("Digite o valor da conta de internet: "))
+// gasolina = Number(prompt("Digite o valor gasto em combustível: "))
+// streaming = Number(prompt("Digite o valor gasto em plataformas de streaming: "))
+// telefone = Number(prompt("Digite o valor gasto em telefonia: "))
+// outro = Number(prompt("Digite o valor gasto em outras despezas: "))
+
+// despezas = Number(moradia + agua + luz + net + gasolina + streaming + telefone + outro)
+// poupanca = salario - despezas
+
+// alert("Esse mês você conseguirá economizar um total de: R$" + poupanca.toFixed(2))
+
+// =================================================================
+
+// ROMERO BRIQUE 
+
+// let gasto, lucro, valorDeVenda
+
+// gasto = Number(prompt("Digite o valor gasto em uma obra: "))
+
+// lucro = Number(gasto*2)
+
+// valorDeVenda = lucro + gasto
+
+// alert("A obra vai ser vendia por: R$" + valorDeVenda.toFixed(2))
+// console.log("A obra vai ser vendia por: R$" + valorDeVenda.toFixed(2))
+
+// ================================================================
+
+// PET SHOP RON BERNARDO E O PREÇO DA RAÇÃO
+
+// let valorPorQuilo, qtdPorQuilo, qtdPorGrama, valorTotal
+
+// valorPorQuilo = Number(prompt("Digite o valor do quilo (Kg) da ração:"))
+// qtdPorGrama = Number(prompt("Digite a quantidade que vai precisar em gramas (g): "))
+
+// qtdPorQuilo = Number(qtdPorGrama / 1000)
+// valorTotal = qtdPorQuilo * valorPorQuilo
+
+// alert(
+//     "Você pegou " + qtdPorQuilo.toFixed(3) + " quilos de ração!!!" +
+//     "\nValor a pagar: R$" + valorTotal.toFixed(2)
+// )
+
+
+// ================================================================
+
+// GAEL E SEUS JARÉS
+
+// let qtdCaminhao, caminhaoFrete, qtdJarePorCaminhao, qtdJareTotal
+// let valorJare, lucro, gasto, faturamento
+
+// qtdJarePorCaminhao = Number(prompt("Digite a quantidade de Jarés por caminhão:"))
+// valorJare = Number(prompt("Digite o valor de cada Jaré:"))
+// caminhaoFrete = Number(prompt("Digite o valor gasto por caminhão: "))
+// qtdCaminhao = Number(prompt("Digite a quantidade de caminhões:"))
+
+
+// qtdJareTotal = Number(qtdJarePorCaminhao * qtdCaminhao)
+// gasto = Number(qtdCaminhao * caminhaoFrete)
+// faturamento = Number( qtdJareTotal * valorJare )
+// lucro = faturamento - gasto 
+
+// alert("Cada Jaré vale R$" + valorJare.toFixed(2) +
+//     "\nVocê vai vender " + qtdJareTotal + " Jarés." +
+//     "\nSeu faturamento bruto vai ser de: R$" + faturamento.toFixed(2) +
+//     "\n\nPara isso vai precisar de " + qtdCaminhao + " caminhões." +
+//     "\nCom isso vai gastar um total de R$" + gasto.toFixed(2) + " de frete." +
+//     "\n==========================" +
+//     "\nSeu lucro total vai ser de: R$" + lucro.toFixed(2) 
+// )
+
+// ===============================================================
+
+// IA E OS PREÇOS POR PROMPTS
+
+// let qtdLetras, custoTokensPorMSG, valorEmReais, valorPorToken
+
+
+// qtdLetras = Number(prompt("Digite a quantidade de caracteres sua mensagem tem: "))
+// valorPorToken = Number(prompt("Qual o valor para cada token?"))
+
+// custoTokensPorMSG = Number(5 + qtdLetras)
+// valorEmReais = valorPorToken * custoTokensPorMSG
+
+// alert("Sua mensagem vai custar " + custoTokensPorMSG + " tokens!" +
+//     "\nSua mensagem vai custar R$" + valorEmReais.toFixed(2)
+// )
+
+// ==============================================================
+
+// JUNIN E SEUS FREELA
+
+let horasEstimadas, consultor = Number(500), valorHora = Number(350), faturamento, lucro
+
+horasEstimadas = Number(prompt("Qual o total de horas estimasdas?"))
+
+faturamento = Number(500 + horasEstimadas * valorHora)
+lucro = faturamento - consultor
+
+
+
+
+
+
+
+
+
