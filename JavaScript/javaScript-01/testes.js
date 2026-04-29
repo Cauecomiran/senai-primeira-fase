@@ -1,19 +1,8 @@
-// alert("Olá mundo!")
-// alert("hello world")
-// let nome
-// alert("Meu nome é: " + nome)
-
-// let idade
-// alert("Minha idade é: " + idade)
-
-//
-
-// alert("Nome: " + nome + "\nIdade: " + idade)
-
-
-// nome = prompt("Digite seu nome: ")
-// idade = prompt("Digite sua idade: ")
-// alert("Seu nome é: " + nome + "\nSua idade é: " + idade)
+function NomeIdade(){
+    let nome, idade
+nome = prompt("Digite seu nome: ")
+idade = prompt("Digite sua idade: ")
+ alert("Seu nome é: " + nome + "\nSua idade é: " + idade)}
 
 //let nota1, nota2, nota3, media
 
@@ -317,18 +306,52 @@
 
 // JUNIN E SEUS FREELA
 
-let horasEstimadas, consultor = Number(500), valorHora = Number(350), faturamento, lucro
+// let horasEstimadas, consultor = Number(500), valorHora = Number(350), faturamento, lucro
 
-horasEstimadas = Number(prompt("Qual o total de horas estimasdas?"))
+// horasEstimadas = Number(prompt("Qual o total de horas estimasdas?"))
 
-faturamento = Number(500 + horasEstimadas * valorHora)
-lucro = faturamento - consultor
+// faturamento = Number(500 + horasEstimadas * valorHora)
+// lucro = faturamento - consultor
 
+// alert("Valor total a cobrar: R$" + faturamento.toFixed(2)+
+// "\nSeu lucro vai de de: R$" + lucro.toFixed(2)
+// )
 
+// ==============================================================
 
+// KOWASKI RELATORIOS
 
+// let relatorioPF, tempoPF, valorPF
+// let relatorioPJ, tempoPJ, valorPJ
+// let totalRelatorio, tempoTotal, totalRecebido, mediaPF, mediaPJ, mediaTempoPF, mediaTempoPJ
 
+// relatorioPF = Number(prompt("Digite a quantidade de relatórios PF:"))
+// tempoPF = Number(prompt("Digite o tempo gasto em relatórios PF:"))
+// valorPF = Number(prompt("Digite o fatutamento em relatórios PF"))
 
+// relatorioPJ = Number(prompt("Digite a quantidade de relatórios PF:"))
+// tempoPJ = Number(prompt("Digite o tempo gasto em relatórios PF:"))
+// valorPJ = Number(prompt("Digite o fatutamento em relatórios PF"))
 
+// totalRelatorio = relatorioPF + relatorioPJ
+// tempoTotal = tempoPF + tempoPJ
+// totalRecebido = valorPF + valorPJ
 
+// mediaPF = valorPF / relatorioPF
+// mediaPJ = valorPJ / relatorioPJ
+
+// mediaTempoPF = tempoPF / relatorioPF
+// mediaTempoPJ = tempoPJ / relatorioPJ
+
+// alert(
+// "Quantidade total de relatórios: " + totalRelatorio + 
+// "\nTempo total trabalhado: " + tempoTotal +
+// "\nValor total recebido: " + totalRecebido +
+
+// "\n\n Média de valor recebido por cada relatório PF: R$" + mediaPF.toFixed(2)+
+// "\n Média de valor recebido por cada relatório PJ: R$" + mediaPJ.toFixed(2)+
+
+// "\n\n Média de tempo trabalhado para cada relatório PF: " + mediaTempoPF +
+// "\n Média de tempo trabalhado para cada relatório PF: " + mediaTempoPJ
+// )
 
