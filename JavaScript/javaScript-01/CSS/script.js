@@ -1,5 +1,34 @@
 let resposta = document.getElementById("resultado")
 
+
+function calcularUber(){
+
+let distancia, tempo, tempoSeg, tempoMin, tempoHora, tempoDia, TempoMes, tempoAno
+
+let minuto, hora, dia, mes, ano
+
+let velocidade = 300000
+
+distancia = Number(prompt("Digite a distância a ser percorrida: "))
+
+
+tempo = distancia / velocidade
+
+
+
+
+
+
+
+
+
+
+alert(tempo)
+
+
+
+}
+
 function kowaskiRelatorios(){
     let relatorioPF, tempoPF, valorPF
 let relatorioPJ, tempoPJ, valorPJ
@@ -99,10 +128,12 @@ qtdPorGrama = Number(prompt("Digite a quantidade que vai precisar em gramas (g):
 qtdPorQuilo = Number(qtdPorGrama / 1000)
 valorTotal = qtdPorQuilo * valorPorQuilo
 
-alert(
-    "Você pegou " + qtdPorQuilo.toFixed(3) + " quilos de ração!!!" +
-    "\nValor a pagar: R$" + valorTotal.toFixed(2))
+// alert(
+//     "Você pegou " + qtdPorQuilo.toFixed(3) + " quilos de ração!!!" +
+//     "\nValor a pagar: R$" + valorTotal.toFixed(2))
 
+document.getElementById("resultado").innerHTML = "Quilos de ração: " + qtdPorQuilo.toFixed(3) +
+"<br>Valor total a pagar: R$" + valorTotal.toFixed(2)
 }
 
 function calcularPrecoBrique(){
@@ -137,7 +168,10 @@ outro = Number(prompt("Digite o valor gasto em outras despezas: "))
 despezas = Number(moradia + agua + luz + net + gasolina + streaming + telefone + outro)
 poupanca = salario - despezas
 
-alert("Esse mês você conseguirá economizar um total de: R$" + poupanca.toFixed(2))
+// alert("Esse mês você conseguirá economizar um total de: R$" + poupanca.toFixed(2))
+document.getElementById("resultado").innerHTML = "Economia mensal: R$" + poupanca.toFixed(2)
+
+
 }
 
 function sarumanoMago(){
@@ -152,11 +186,15 @@ qtdBombas = Number(qtdShow * bombaPorShow)
 valorGastoTotal = qtdBombas * valorPorBomba
 
 
-alert("Sarumano vai usar essa quantidade de bombas: " + qtdBombas)
-console.log("Sarumano vai usar essa quantidade de bombas: " + qtdBombas)
+// alert("Sarumano vai usar essa quantidade de bombas: " + qtdBombas)
+// console.log("Sarumano vai usar essa quantidade de bombas: " + qtdBombas)
 
-alert("Vai ser gasto um total de: R$" + valorGastoTotal.toFixed(2))
-console.log("Vai ser gasto um total de: R$" + valorGastoTotal.toFixed(2))
+// alert("Vai ser gasto um total de: R$" + valorGastoTotal.toFixed(2))
+// console.log("Vai ser gasto um total de: R$" + valorGastoTotal.toFixed(2))
+
+document.getElementById("resultado").innerHTML = "bombas usadas: " + qtdBombas + 
+"<br>Total gasto: R$" + valorGastoTotal.toFixed(2)
+
 
 }
 
@@ -171,11 +209,14 @@ vendaItens =  Number(prompt("Digite o faturamento em itens vendidos: "))
 lucro = Number(vendaIngresso + vendaItens - gastoSuprimento)
 lucroPer100 = lucro/gastoSuprimento * 100
 
-alert("Seu lucro foi de: R$" + lucro +
-    "\n Seu percentual de lucro foi: " + lucroPer100 + "%")
+// alert("Seu lucro foi de: R$" + lucro +
+//     "\n Seu percentual de lucro foi: " + lucroPer100 + "%")
 
-console.log("Seu lucro foi de: R$" + lucro +
-    "\n Seu percentual de lucro foi: " + lucroPer100 + "%")
+// console.log("Seu lucro foi de: R$" + lucro +
+//     "\n Seu percentual de lucro foi: " + lucroPer100 + "%")
+
+document.getElementById("resultado").innerHTML = "Lucro: R$" + lucro.toFixed(2) +
+"<br>Percentual de lucro: " + lucroPer100 + "%"
 
 }
 
@@ -189,8 +230,10 @@ salario = Number(prompt("Digite o valor gasto em salários com funci"))
 
 lucro = faturamento - premiacao - presente - salario
 
-alert("O lucro da DonaBet foi de: R$" + lucro )
-console.log("O lucro da DonaBet foi de: R$" + lucro)
+// alert("O lucro da DonaBet foi de: R$" + lucro )
+// console.log("O lucro da DonaBet foi de: R$" + lucro)
+
+document.getElementById("resultado").innerHTML = "O lucro foi de: R$" + lucro 
 
 }
 
@@ -202,8 +245,10 @@ vzsNoCelular = Number(prompt("Quantas vezes o candidato pegou o celular:"))
 
 chance = (0.1 / (1 + 500 * vzsNoCelular)) * 100
 
-alert("A chance do candidato passar no teste é de: " + chance.toFixed(4) + "%")
-console.log("A chance do candidato passar no teste é de: " + chance.toFixed(4) + "%")
+// alert("A chance do candidato passar no teste é de: " + chance.toFixed(4) + "%")
+// console.log("A chance do candidato passar no teste é de: " + chance.toFixed(4) + "%")
+
+document.getElementById("resultado").innerHTML = "A chance do candidato passar é de: " + chance.toFixed(4) + "%"
 
 }
 
@@ -216,8 +261,12 @@ distancia = Number(prompt("Digite a distância total: "))
 
 frete = 15+(2*peso)+(0.05*distancia)+(10*volume)
 
-alert("O frete é de: R$" + frete.toFixed(2) + " reais!")
-console.log("O frete é de: R$" + frete.toFixed(2) + " reais!")
+// alert("O frete é de: R$" + frete.toFixed(2) + " reais!")
+// console.log("O frete é de: R$" + frete.toFixed(2) + " reais!")
+
+document.getElementById("resultado").innerHTML = "Frete total: R$" + frete
+
+
 }
 
 function juninSalarioDiario(){
@@ -232,12 +281,16 @@ salarioDia = Number(salarioMensal / diasTrabalhados)
 salarioSemanal = Number(salarioDia * 5)
 
 
-alert("O salário que recebe por dia é de: R$" + salarioDia.toFixed(2) + " Reais!" )
-console.log("O salário que recebe por dia é de: R$" + salarioDia.toFixed(2) + " Reais!" )
+// alert("O salário que recebe por dia é de: R$" + salarioDia.toFixed(2) + " Reais!" )
+// console.log("O salário que recebe por dia é de: R$" + salarioDia.toFixed(2) + " Reais!" )
 
 
-alert("O salário que recebe por semana é de: R$" + salarioSemanal.toFixed(2) + " Reais!" )
-console.log("O salário que recebe por semana é de: R$" + salarioSemanal.toFixed(2) + " Reais!" )
+// alert("O salário que recebe por semana é de: R$" + salarioSemanal.toFixed(2) + " Reais!" )
+// console.log("O salário que recebe por semana é de: R$" + salarioSemanal.toFixed(2) + " Reais!" )
+
+document.getElementById("resultado").innerHTML = "Salário diário: R$" + salarioDia.toFixed(2) +
+ "<br>Salário semanal: R$" + salarioSemanal.toFixed(2)
+
 
 }
 
@@ -253,7 +306,8 @@ Number(totalRecebido = oferta + dizimo)
 
 faltaPagar = totalRecebido - custos
 
-alert("Faltam pagar: " + faltaPagar.toFixed(2) + " Reais!")
+document.getElementById("resultado").innerHTML = "Falta á pagar: R$" + faltaPagar 
+
 }
 
 function trajetoPomar(){
@@ -264,7 +318,8 @@ qtdFinal = Number(prompt("Digite a quantidade final de laranjas: "))
 
 vendas = qtdIncial - qtdFinal
 
-console.log("Suas vendas são de: " + vendas.toFixed(2) + " laranjas")
+document.getElementById("resultado").innerHTML = "Venda total de laranjas foi de: " + vendas
+
 }
 
 function guilhermePortoes(){
@@ -275,7 +330,7 @@ pj = Number(prompt("Digite a quantidade de PJs que tem na empresa: "))
 
 totalDevs = clt + pj 
 
-alert("Na empresa tem " + totalDevs + " devs na empresa!")
+document.getElementById("resultado").innerHTML = "Total de devs na empresa é de: " + totalDevs
 }
 
 function pePequeno(){
