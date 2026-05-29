@@ -18,7 +18,7 @@ function aposta(dino){
             //====
             if(dino == 1){
                 document.getElementById("dinoEscolhido").innerHTML = "Seu dino = T-Rex"
-            }
+            } else if
 
 
 
