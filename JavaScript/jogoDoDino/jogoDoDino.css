@@ -14,8 +14,8 @@ label{color: rgb(126, 192, 141);}
 .button{
     width:150px;
     height:50;
-    margin: 5px;
-    border-radius: 5px;
+    
+    border-radius: 8px;
     color: rgb(252, 255, 255);
     background-color: rgb(68, 71, 73);
 }
@@ -27,3 +27,13 @@ h2{
 }    
 
 p{color: rgb(92, 155, 106)}
+
+#divBt{
+display: flex;
+flex-wrap: wrap;
+justify-content: start;
+align-items: center;
+gap: 10px;
+
+
+}

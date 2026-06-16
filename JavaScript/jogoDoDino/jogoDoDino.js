@@ -10,26 +10,15 @@ function aposta(dino){
     
     if(numeroSorteado == dino && premio <= lucro*0.2 )
         {
-            document.getElementById("dinoSorteado").innerHTML = "Você ganhou!"
+         document.getElementById("resultado").innerHTML = "Você ganhou R$" + premio.toFixed(2) + "!!!"
 
-            lucro = lucro - premio
-            alert(lucro)
+         
 
-            //====
-            if(dino == 1){
-                document.getElementById("dinoEscolhido").innerHTML = "Seu dino = T-Rex"
-            } else if
-
-
-
-        } else {
-            document.getElementById("dinoSorteado").innerHTML = "Você perdeu!"
-        
+        }else{
+            document.getElementById("resultado").innerHTML = "Você perdeu!!!"
             lucro += valorAposta
-            alert(lucro)
         }
 
-    
+}
   
 
-}

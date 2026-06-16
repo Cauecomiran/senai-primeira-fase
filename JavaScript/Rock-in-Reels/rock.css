@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box ;
+}
+
+body{
+    background-color: rgb(85, 74, 74);
+    color: rgb(214, 207, 163);
+}
+
+button{
+    background-color: rgb(214, 207, 163);
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+.texto{margin: 2%;}
+
+
+h1{ 
+    margin-left: 30%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.button{
+    display: flexbox;
+    margin-left: 80%;
+    
+}
+
+.começo{
+    margin-left: 45%;
+}
