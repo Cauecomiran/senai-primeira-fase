@@ -1,1 +1,7 @@
 body{background-color: rgb(129, 130, 130);}
+
+.input{
+    display:flex;
+    flex-direction: column;
+    padding-right: 80%;
+}
