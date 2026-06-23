@@ -198,28 +198,44 @@
 //     "Total de números pares: "  + par +
 //     "<br>Total de números impares: " + impar
 
-function atividade12(){
-let numero1,numero2,numero3,numero4,numero5
-let i = 0
+// function atividade12(){
+// let numero1,numero2,numero3,numero4,numero5
+// let i = 0
 
-numero1 = Number(document.getElementById("1").value)
-numero2 = Number(document.getElementById("2").value)
-numero3 = Number(document.getElementById("3").value)
-numero4 = Number(document.getElementById("4").value)
-numero5 = Number(document.getElementById("5").value)
+// numero1 = Number(document.getElementById("1").value)
+// numero2 = Number(document.getElementById("2").value)
+// numero3 = Number(document.getElementById("3").value)
+// numero4 = Number(document.getElementById("4").value)
+// numero5 = Number(document.getElementById("5").value)
 
-while( i<numero1 || i<numero2 || i<numero3 || i<numero4 || i<numero5){
-    i++
+// while( i<numero1 || i<numero2 || i<numero3 || i<numero4 || i<numero5){
+//     i++
+// }
+
+//     document.getElementById("teste").innerHTML += i
+
+
+// while(i>numero1 || i>numero2 || i>numero3 || i>numero4 || i>numero5){
+//     i=i-1
+// }
+//     document.getElementById("teste2").innerHTML += i
+
+
+// }
+
+function atv13(){
+
+    let i = 0
+
+    let qtdNumero = Number(prompt("Precisa da média de quantos número?"))
+    let total = 0
+
+    while(i < qtdNumero ){
+        i++
+        total += prompt("Digite o número " + i)
 }
-
-    document.getElementById("teste").innerHTML += i
-
-
-while(i>numero1 || i>numero2 || i>numero3 || i>numero4 || i>numero5){
-    i=i-1
-}
-    document.getElementById("teste2").innerHTML += i
-
+    
+        
 
 }
 

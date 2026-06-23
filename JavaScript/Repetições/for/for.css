@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(87, 85, 85);
+    color: rgb(255, 244, 229);
+}
+
+.botoes{
+    padding: 15px;
+}
+
+#resposta{
+    padding: 15px;
+}
