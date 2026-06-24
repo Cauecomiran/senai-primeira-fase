@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(112, 112, 112);
+}
+#resposta2{
+    width: 400px;
+    height: 400px;
+    resize: none;
+    padding: 10px;
+}
