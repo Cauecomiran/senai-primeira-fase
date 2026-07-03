@@ -68,7 +68,93 @@ function remover(){
 
 }
 
-function(){}
+const pares = []
+
+function arrayPar(){
+
+  for(let i = 2; i<=20; i+=2 ){
+
+    pares.push(i)
+
+  }
+
+  alert(pares)
+
+}
+
+function substituir(){
+
+ pares.splice(2, 1, 12)
+
+  document.getElementById('respostaNumeros').innerHTML = pares
+
+}
+
+const frutas = ["manga", "banana", "uva"]
+
+function adicionarFruta(){
+
+  let fruta = prompt("Digite uma fruta:")
+  frutas.push(fruta)
+
+  document.getElementById("fruta").innerHTML = frutas
+
+}
+
+function removerFruta(){
+
+  frutas.splice(1,1)
+  document.getElementById("fruta").innerHTML = frutas
+  console.log(frutas)
+
+}
+
+
+const nomes = ["Alice", "Bob", "Charlie"]
+
+function somandoAmigos(){
+
+
+  for(let i = 0; i<=nomesProvisorio.length(); i++){
+    let nomesProvisorio = nomesProvisorio
+
+
+
+
+
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
