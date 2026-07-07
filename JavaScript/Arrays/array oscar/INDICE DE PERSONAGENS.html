@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)https://ava.sesisenai.org.br/pluginfile.php/2105576/mod_resource/content/1/index.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<title> INDICE DE PERSONAGENS</title></head>
+
+
+
+<body>
+    <div class="card">
+        <h1>Buscar Indice de Personagem</h1>
+        <div class="array-container" id="lista"></div>
+        <select id="seletor"></select>
+        <button onclick="buscarIndice()">Buscar Indice</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        const personagens = [
+            "Rivaldo Jesus",
+            "Kowalski",
+            "Genezio",
+            "Waltdisney"
+        ];
+
+        const lista = document.getElementById("lista");
+        const seletor = document.getElementById("seletor");
+
+
+
+
+        
+
+        personagens.forEach((nome, i) => {
+            const celula = document.createElement("div");
+            celula.className = "celula";
+            celula.id = "item" + i;
+            celula.innerHTML = `<span class="valor">${nome}</span><class="idx">[${i}]</span>`;
+            lista.appendChild(celula);
+
+            const opt = document.createElement("option");
+            opt.value = nome;
+            opt.textContent = nome;
+            seletor.appendChild(opt);
+        });
+
+        function buscarIndice() {
+            document.querySelectorAll(".celula").forEach(c=>c.classList.remove("destaque"));
+            const nomeEscolhido = seletor.value;
+            const indice = personagens.indexOf(nomeEscolhido);
+            document.getElementById("resultado").textContent =
+
+                `"${nomeEscolhido}" está no indice ${indice}`;
+            document.getElementById("item-" + indice).classList.add("destaque");
+
+        }
+
+    </script>
+
+
+</body></html>
