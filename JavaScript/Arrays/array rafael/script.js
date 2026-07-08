@@ -110,30 +110,47 @@ function removerFruta(){
 }
 
 
-const nomes = ["Alice", "Bob", "Charlie"]
+const nomes = ['Alice', 'Bob', 'Charlie', 'Dave', 'Eva', 'Frank']
+const idades = [25, 30, 28, 22, 26, 24]
+
 
 function somandoAmigos(){
+  
+  const arrayProv = ["caue", "luiz", "soares", "comiran"]
+  
+  for(let i = 0; arrayProv.length; i++  ){
+    let nomeProv = arrayProv.pop()
+    nomes.push(nomeProv)
+  }
+ console.log(nomes)
+}
 
 
-  for(let i = 0; i<=nomesProvisorio.length(); i++){
-    let nomesProvisorio = nomesProvisorio
+function calcularMediaIdade(){
 
+  let media = 0
 
+  for(let i = 0; i < idades.length; i++){
 
+    let somaDeIdade = 0
+    somaDeIdade = idades[i]
 
+    media += somaDeIdade
 
   }
+  
+ media = media / idades.length
 
+  document.getElementById("Amigos").innerHTML = `Média de idades: ${media}`
 
-
-
-
-
+ 
 }
 
 
 
+const compras = ["manga", "banana", "melao"]
 
+function adicionarAoCarrinho(){}
 
 
 
