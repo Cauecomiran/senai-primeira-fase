@@ -1,0 +1,46 @@
+
+
+
+body{
+    background-color: rgb(69, 64, 64);
+    color: rgb(202, 185, 162);
+}
+
+h1{
+    text-align: center;
+}
+
+#linha{
+margin-bottom: 2%;
+}
+
+.divLinha{
+
+    color: rgb(202, 185, 162);
+
+    border: inset;
+
+    padding: 5px;
+
+    margin: 6px;
+
+    width: 30%;
+
+    text-align: center;
+}
+
+button{
+    margin: 5px;
+    background-color: rgb(69, 64, 64);
+    border: 2px solid rgb(212, 212, 212);
+
+    color:rgb(202, 185, 162);;
+}
+
+.card-pergunta{
+    border: inset;
+    padding: 5px;
+    margin: 6px;
+    
+    width: 30%;
+}
