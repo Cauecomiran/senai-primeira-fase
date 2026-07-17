@@ -37,6 +37,6 @@ function buscarIndice() {
     
     `"${nomeEscolhido}" esta no ${indice + 1}° lugar`
    
-
+ 
 
 }

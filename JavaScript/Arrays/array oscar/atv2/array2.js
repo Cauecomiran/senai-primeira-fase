@@ -46,7 +46,7 @@ function exec3(){
             
             array.splice(i,0)
 
-            respostas = 
+            respostas
         }
 
     }
