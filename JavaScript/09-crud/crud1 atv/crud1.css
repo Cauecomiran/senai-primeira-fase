@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(4, 61, 53);
+    color: rgb(63, 215, 165);
+    
+}
+
+.celula{
+    border: inset;
+    padding: 10px;
+    margin: 15px;
+   
+    border-radius: 15px;
+    background-color: rgb(188, 190, 181);
+    color: rgb(4, 61, 53);
+
+    border: none;
+    box-shadow:3px 3px 10px rgb(6, 138, 72) ;
+}
+
+.containerInputs{
+    margin: 0px;
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
+#form{
+    
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+
+    padding: 1%;
+    border:inset;
+    border-radius: 15px;
+
+    border: inset;
+    padding: 10px;
+    margin: 15px;
+}
+
+.botao{
+    margin: 5px;
+    margin-right: 0%;
+    gap: 5px;
+    display: flex;
+    justify-content: right;
+
+}
+
+button{
+    background-color: rgb(6, 138, 72);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+input{
+    background-color:rgb(188, 190, 181);
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#mostrar-dinos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+#all{
+    display: flex;
+    flex-wrap: nowrap;
+}

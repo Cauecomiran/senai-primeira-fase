@@ -10,43 +10,50 @@
 </head>
 <body>
     
-    <h1>CRUD</h1>
+
+    <div id="all">
+        <div id="form">
+
+            <h1>CRUD dos dinos🦕🦖</h1>
+
+            <div class="containerInputs">
+                <label for="input-nome">Nome</label>
+                <input id="input-nome" type="text">
+            </div>
+
+            <div class="containerInputs">
+                <label for="input-altura">Altura</label>
+                <input id="input-altura" type="text">
+            </div>
+
+            <div class="containerInputs">
+                <label for="input-cor">Cor</label>
+                <input id="input-cor" type="text">
+            </div>
+
+            <div class="containerInputs">
+                <label for="input-custo">Custo</label>
+                <input id="input-custo" type="text">
+            </div>
+
+            <div class="botao">
+                <button onclick="adicionar()">Adicionar dinossauros</button>
+                <button onclick="mostrarDinos()">mostrarDinos</button>
+                <button id="remover" onclick="remover()">Remover</button>
+                <button onclick="buscar()">🔎</button>
+                <button onclick="modificar()">modificar</button>
+            </div>
 
 
-    <button onclick="teste()">teste</button>
-
-    <div id="form">
-        <div class="containerInputs">
-            <label for="input-nome">Nome</label>
-            <input id="input-nome" type="text">
         </div>
 
-        <div class="containerInputs">
-            <label for="input-altura">Altura</label>
-            <input id="input-altura" type="text">
-        </div>
-
-        <div class="containerInputs">
-            <label for="input-cor">Cor</label>
-            <input id="input-cor" type="text">
-        </div>
-
-        <div class="containerInputs">
-            <label for="input-custo">Custo</label>
-            <input id="input-custo" type="text">
-        </div>
-        
-        <div class="botao">
-            <button onclick="adicionar()">Adicionar dinossauros</button>
-            <button onclick="mostrarDinos()">mostrarDinos</button>
-        </div>
+    
 
         <div id="mostrar-dinos">
 
         </div>
-    </div>
 
-    
+    </div>
 
 
 
