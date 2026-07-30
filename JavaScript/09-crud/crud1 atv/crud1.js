@@ -8,7 +8,7 @@
 
     
 
-    const dinos = [
+    let dinos = [
         {
           id: 1234,
           nome: "T-Rex",
@@ -34,9 +34,23 @@
 
     const mostrar = document.getElementById("mostrar-dinos")
 
-    function adicionar(){
+    function salvarDados(){
+      localStorage.setItem("dinos", JSON.stringify(dinos))
+    }
 
+    function carregarDados(){
+      localStorage.getItem("dinos")
+
+      console.log(dinos[3])
+    }
+
+
+    function adicionar(){
+        localStorage.setItem("mostrar", 45)
         
+        let testeDeLeitura = localStorage.getItem("mostrar")
+
+        console.log(testeDeLeitura)
 
         const novoDino = {
 
@@ -45,8 +59,7 @@
             altura: Number(document.getElementById("input-altura").value),
             cor: document.getElementById("input-cor").value,
             custo: Number(document.getElementById("input-custo").value),
-
-        }
+           }
 
         document.getElementById("input-nome").value = ""
         document.getElementById("input-altura").value = ""
@@ -55,12 +68,13 @@
 
         document.getElementById("input-nome").focus()
 
-       dinos.push(novoDino)
-
+        dinos.push(novoDino)
+        salvarDados()
     }
     
     function mostrarDinos(){
-        
+
+        dinos = JSON.parse(localStorage.getItem("dinos"))
         mostrar.innerHTML =""
        dinos.forEach((dino, i) =>{
         
